@@ -1,0 +1,14 @@
+/*
+ *Back-end
+ */
+.cnc_logo {
+    float: left;
+    margin: 0 1em 0 0;
+}
+.cnc_license {
+    text-align: justify;
+}
+.cnc_files {
+    max-width: 99%;
+    overflow-x: auto;
+}
