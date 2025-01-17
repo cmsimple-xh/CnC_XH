@@ -67,7 +67,7 @@ class CacheService {
         $files = '';
         foreach (new \DirectoryIterator($this->cacheFolder) as $fileInfo) {
             if (!$fileInfo->isDot() && $fileInfo->isFile()) {
-                $files .= $fileInfo->getFilename() . '<br>' . PHP_EOL;
+                $files .= $fileInfo->getFilename() . '<br>' . "\n";
                 $bytes += $fileInfo->getSize();
                 $count += 1;
             }
@@ -80,12 +80,12 @@ class CacheService {
             $size = $bytes;
         }
 
-        $html = '<div class="cnc_files";>' . PHP_EOL;
-        $html .= '<p>' . sprintf($this->lang['folder_contains'], $size, $count) . '</p>' . PHP_EOL;
-        $html .= '<p>' . PHP_EOL;
+        $html = '<div class="cnc_files";>' . "\n";
+        $html .= '<p>' . sprintf($this->lang['folder_contains'], $size, $count) . '</p>' . "\n";
+        $html .= '<p>' . "\n";
         $html .= $files;
-        $html .= '</p>' . PHP_EOL;
-        $html .= '</div>' . PHP_EOL;
+        $html .= '</p>' . "\n";
+        $html .= '</div>' . "\n";
         return $html;
     }
 

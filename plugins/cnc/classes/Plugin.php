@@ -26,7 +26,7 @@ namespace Cnc;
 
 class Plugin
 {
-    const VERSION = '1.0beta1';
+    const VERSION = '1.0 beta2';
 
     /**
      * @var string
@@ -104,7 +104,7 @@ class Plugin
     {
         global $title, $pth;
         
-        $title = "CnC";
+        $title = "CnC_XH";
         $view = new View('info');
         $view->version = self::VERSION;
         $view->logo = "{$pth['folder']['plugins']}cnc/cnc.png";

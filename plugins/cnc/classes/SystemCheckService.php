@@ -48,13 +48,18 @@ class SystemCheckService
      */
     public function getChecks()
     {
+
+    global $sl;
+
         return array(
-            $this->checkXhVersion('1.7.0beta1'),
-            $this->checkPhpVersion('5.4.0'),
+            $this->checkXhVersion('1.7.0'),
+            $this->checkPhpVersion('7.4.0'),
             $this->checkExtension('dom'),
             $this->checkExtension('libxml'),
             $this->checkExtension('zlib'),
-            $this->checkWritability("$this->pluginFolder/css/"),
+            $this->checkWritability("$this->pluginFolder/css/stylesheet.css"),
+            $this->checkWritability("$this->pluginFolder/config/config.php"),
+            $this->checkWritability("$this->pluginFolder/languages/$sl.php"),
             $this->checkWritability("$this->pluginFolder/languages/"),
             $this->checkWritability("$this->pluginFolder/cache/"),
             $this->checkReadability(CMSIMPLE_BASE . 'min/config.php')

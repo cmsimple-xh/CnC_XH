@@ -2,11 +2,17 @@
  *Back-end
  */
 .cnc_logo {
-    float: left;
-    margin: 0 1em 0 0;
+    float: left !important;
+    margin: 1em 2em 0 0 !important;
+    height: 128px !important;
+    width: 128px !important;
+}
+.cnc_version {
+    margin-bottom: 4em !important;
 }
 .cnc_license {
     text-align: justify;
+    clear: left;
 }
 .cnc_files {
     max-width: 99%;

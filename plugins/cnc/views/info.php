@@ -1,7 +1,8 @@
-<h1>CnC_XH</h1>
+<div class="cnc_admin">
 <img src="<?=$this->logo()?>" class="cnc_logo" alt="<?=$this->text('alt_logo')?>">
-<p>
-    Version: <?=$this->version()?> &copy; 2017 <a href="http://cmsimple.holgerirmler.de/">Holger Irmler</a>
+<h1>CnC_XH</h1>
+<p class="cnc_version">
+    Version: <?=$this->version()?><br>&copy; 2017 Holger Irmler<br>&copy; 2025 CMSimple_XH developers
 </p>
 <p class="cnc_license">
     <strong>Cache & Compress for CMSimple_XH</strong><br>
@@ -29,6 +30,7 @@
     CnC_XH. If not, see <a
     href="http://www.gnu.org/licenses/">http://www.gnu.org/licenses/</a>.
 </p>
+</div>
 <div class="cnc_syscheck">
     <h2><?=$this->text('syscheck_title')?></h2>
 <?php foreach ($this->checks as $check):?>

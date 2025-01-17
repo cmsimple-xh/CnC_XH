@@ -127,7 +127,7 @@ class View
     {
         global $pth;
 
-        echo "<!-- {$this->template} -->", PHP_EOL;
+        echo "<!-- {$this->template} -->", "\n";
         include "{$pth['folder']['plugins']}cnc/views/{$this->template}.php";
     }
 
