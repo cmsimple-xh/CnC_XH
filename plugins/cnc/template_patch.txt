@@ -1,0 +1,7 @@
+<?php
+if(isset($plugin_cf['cnc']['start_auto'])
+&& $plugin_cf['cnc']['start_auto'] != 'true'
+&& function_exists('hi_cnc')) {
+    hi_cnc();
+}
+?>

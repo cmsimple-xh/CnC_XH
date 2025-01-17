@@ -18,6 +18,7 @@ $plugin_tx['cnc']['syscheck_writable']="'%s' schreibbar ist";
 $plugin_tx['cnc']['syscheck_readable']="'%s' lesbar ist";
 $plugin_tx['cnc']['syscheck_xhversion']="die CMSimple_XH-Version ≥ %s";
 $plugin_tx['cnc']['cf_activate']="Plugin aktivieren.";
+$plugin_tx['cnc']['cf_start_auto']="CnC wird automatisch gestartet.<br>Sollte es Probleme im Zusammenhang mit anderen Plugins (z.B. Swiper_XH) geben, dann diese Option deaktivieren und im Template (template.htm), unbedingt als Letztes, den Code aus template_patch.txt (liegt im Plugin-Ordner) einfügen.";
 $plugin_tx['cnc']['cf_compress_html']="Sende die HTML-Ausgabe GZip-komprimiert.";
 $plugin_tx['cnc']['cf_ignore_js']="Eine mit Kommas separierte Liste von JS-Erweiterungen, die vom Plugin ignoriert werden.";
 $plugin_tx['cnc']['cf_ignore_css']="Eine mit Kommas separierte Liste von CSS-Erweiterungen, die vom Plugin ignoriert werden.";
