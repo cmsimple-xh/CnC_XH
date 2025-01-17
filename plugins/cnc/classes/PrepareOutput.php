@@ -142,6 +142,14 @@ class PrepareOutput {
         }
         $dom->formatOutput = true;
         $output = $dom->saveHTML();
+        $output = str_ireplace(array('</command>',
+                                     '</embed>',
+                                     '</keygen>',
+                                     '</source>',
+                                     '</track>',
+                                     '</wbr>'),
+                               '',
+                               $output);
 
         $compress = (isset($_SERVER['HTTP_ACCEPT_ENCODING'])
                     && substr_count(strtolower($_SERVER['HTTP_ACCEPT_ENCODING']), 'gzip')
