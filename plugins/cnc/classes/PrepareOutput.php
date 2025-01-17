@@ -142,10 +142,14 @@ class PrepareOutput {
         }
         $dom->formatOutput = true;
         $output = $dom->saveHTML();
-        
-        $compress = substr_count(strtolower($_SERVER['HTTP_ACCEPT_ENCODING']), 'gzip') 
-                    && function_exists('gzencode') && $this->useGzip ? true : false;
-        
+
+        $compress = (isset($_SERVER['HTTP_ACCEPT_ENCODING'])
+                    && substr_count(strtolower($_SERVER['HTTP_ACCEPT_ENCODING']), 'gzip')
+                    && function_exists('gzencode')
+                    && $this->useGzip
+                        ? true
+                        : false);
+
         if ($compress) {
             $output = gzencode($output);
             header('Content-Encoding: gzip');
